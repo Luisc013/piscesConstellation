@@ -8,21 +8,20 @@ screen.screensize()
 screen.setup(height = 1080, width = 1920)
 screen.bgcolor('grey')
 
+FONTSIZE = 18
+FONT = ('Arial', FONTSIZE, 'normal')
 pisces.hideturtle()
 pisces.pencolor("white")
 pisces.penup()
-pisces.write('Midterm Constellation Project', align = 'center')
+pisces.write('Midterm Constellation Project', align = 'center', font = FONT)
 pisces.goto(-7, -42)
-pisces.write('Pisces Constellation', align = 'center')
+pisces.write('Pisces Constellation', align = 'center', font = FONT)
 pisces.goto(-10, -85)
-pisces.write('Luis Carmona', align = 'center')
+pisces.write('Luis Carmona', align = 'center', font = FONT)
 pisces.pendown()
 pisces.hideturtle()
 time.sleep(10)
 screen.clear()
-
-
-import turtle
 
 myPen = turtle.Turtle()
 myPen.speed('fast')
